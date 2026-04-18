@@ -250,8 +250,7 @@ h2 {
 }
 
 .card.featured {
-  border: 2px solid #f1d79e;
-  background: linear-gradient(180deg, #fffdfa 0, #fff 100%);
+
 }
 
 .card h3 {
@@ -379,11 +378,6 @@ h2 {
   .nav-wrap {
     gap: 0.75rem;
     flex-direction: column;
-  }
-
-  .header-actions {
-    flex-direction: column;
-    gap: 0.55rem;
   }
 
   .hero {
