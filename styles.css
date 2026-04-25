@@ -8,7 +8,6 @@
   --mint: #dff3ea;
   --line: #dbe4f2;
   --shadow: 0 12px 30px rgba(56, 89, 139, 0.11);
-  --soft-shadow: 0 12px 28px rgba(88, 111, 150, 0.14);
 }
 
 * {
@@ -79,7 +78,7 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 5.8rem 0 5.1rem;
+  padding: 5.4rem 0 4.7rem;
   background: linear-gradient(135deg, #f7f5ff 0%, #eff7ff 45%, #eefbf6 100%);
 }
 
@@ -131,17 +130,6 @@ body {
   background: #ffffffd9;
 }
 
-.hero-badge {
-  display: inline-block;
-  margin: 0.75rem 0 0;
-  padding: 0.38rem 0.8rem;
-  background: #fff5de;
-  color: #8c6633;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 0.86rem;
-}
-
 h1 {
   font-size: clamp(2rem, 3.5vw, 3.3rem);
   margin: 1rem 0;
@@ -158,25 +146,6 @@ h1 span {
   color: var(--muted);
 }
 
-.hero-points {
-  margin: 1rem 0 0;
-  padding: 0;
-  list-style: none;
-  display: grid;
-  gap: 0.45rem;
-}
-
-.hero-points li {
-  width: fit-content;
-  max-width: 100%;
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid #d7e2f3;
-  border-radius: 999px;
-  padding: 0.35rem 0.8rem;
-  font-size: 0.92rem;
-  color: #4a628a;
-}
-
 .hero-actions {
   display: flex;
   gap: 0.75rem;
@@ -184,56 +153,11 @@ h1 span {
   margin-top: 1.5rem;
 }
 
-.hero-illustration {
-  position: relative;
-}
-
-.hero-panel {
-  padding: 0.8rem;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid #d7e4f5;
-  box-shadow: var(--soft-shadow);
-}
-
 .hero-illustration svg {
   width: min(100%, 430px);
   display: block;
   margin-inline: auto;
   filter: drop-shadow(0 18px 26px rgba(90, 111, 147, 0.2));
-}
-
-.mini-card {
-  position: absolute;
-  width: min(220px, 52%);
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid #d2dff2;
-  border-radius: 18px;
-  padding: 0.8rem 0.9rem;
-  box-shadow: 0 10px 24px rgba(67, 94, 137, 0.16);
-}
-
-.card-consult {
-  top: -16px;
-  left: -20px;
-}
-
-.card-support {
-  right: -18px;
-  bottom: -20px;
-}
-
-.mini-title {
-  margin: 0;
-  font-weight: 700;
-  color: #395d92;
-}
-
-.mini-text {
-  margin: 0.3rem 0 0;
-  font-size: 0.84rem;
-  color: #637796;
-  line-height: 1.5;
 }
 
 .btn {
@@ -256,7 +180,7 @@ h1 span {
 }
 
 .section {
-  padding: 4.8rem 0;
+  padding: 4.5rem 0;
 }
 
 h2 {
@@ -275,47 +199,6 @@ h2 {
 
 .problems {
   background: #fff;
-}
-
-.support-intro {
-  background: #fff;
-  padding-top: 2.6rem;
-  padding-bottom: 1.4rem;
-}
-
-.support-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-}
-
-.support-card {
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 1.1rem;
-}
-
-.support-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  background: #eef4ff;
-  font-size: 1.25rem;
-}
-
-.support-card h3 {
-  margin: 0.75rem 0 0.4rem;
-  color: #345683;
-  font-size: 1rem;
-}
-
-.support-card p {
-  margin: 0;
-  color: #667894;
-  font-size: 0.95rem;
 }
 
 .problem-list {
@@ -395,8 +278,7 @@ h2 {
 }
 
 .card.featured {
-  border-color: #bdd2f0;
-  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+
 }
 
 .card h3 {
@@ -581,12 +463,6 @@ h2 {
     order: -1;
   }
 
-  .mini-card {
-    position: static;
-    width: 100%;
-    margin-top: 0.7rem;
-  }
-
   .contact-illustration svg {
     margin-right: auto;
   }
@@ -625,11 +501,6 @@ h2 {
 
   .hero {
     padding-top: 4.5rem;
-  }
-
-  .hero-points li {
-    width: 100%;
-    border-radius: 12px;
   }
 
   .hero-actions .btn {
