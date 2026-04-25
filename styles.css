@@ -153,19 +153,6 @@ h1 span {
   margin-top: 1.5rem;
 }
 
-.hero-illustration {
-  position: relative;
-}
-
-.hero-illustration::before {
-  content: "";
-  position: absolute;
-  inset: 16% 8% -5%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(206, 223, 249, 0.45));
-  filter: blur(24px);
-  z-index: -1;
-}
-
 .hero-illustration svg {
   width: min(100%, 430px);
   display: block;
@@ -212,16 +199,6 @@ h2 {
 
 .problems {
   background: #fff;
-}
-
-
-.section-people {
-  margin-bottom: 0.8rem;
-}
-
-.section-people svg {
-  width: min(220px, 100%);
-  display: block;
 }
 
 .problem-list {
@@ -301,8 +278,7 @@ h2 {
 }
 
 .card.featured {
-  border-color: #cad9f1;
-  background: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
+
 }
 
 .card h3 {
@@ -456,22 +432,6 @@ h2 {
   width: min(100%, 320px);
   display: block;
   margin-left: auto;
-}
-
-.contact-illustration {
-  position: relative;
-}
-
-.contact-illustration::after {
-  content: "";
-  position: absolute;
-  width: 170px;
-  height: 170px;
-  right: 0;
-  bottom: -20px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-  filter: blur(12px);
-  pointer-events: none;
 }
 
 .site-footer {
