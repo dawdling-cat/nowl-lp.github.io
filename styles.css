@@ -146,6 +146,27 @@ h1 span {
   color: var(--muted);
 }
 
+.hero-points {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.hero-points li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #d5e0f1;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  color: #3d5d8f;
+  font-weight: 500;
+}
+
 .hero-actions {
   display: flex;
   gap: 0.75rem;
@@ -181,6 +202,45 @@ h1 span {
 
 .section {
   padding: 4.5rem 0;
+}
+
+.illustration-strip {
+  padding-top: 0;
+  background: linear-gradient(180deg, #f3f8ff 0%, #ffffff 100%);
+}
+
+.illust-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.illust-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(56, 89, 139, 0.08);
+}
+
+.illust-icon {
+  font-size: 1.55rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f3f7ff;
+  margin-bottom: 0.75rem;
+}
+
+.illust-card h3 {
+  margin: 0 0 0.4rem;
+  color: #2f5f99;
+}
+
+.illust-card p {
+  margin: 0;
 }
 
 h2 {
