@@ -162,6 +162,19 @@ h1 span {
   filter: drop-shadow(0 20px 28px rgba(47, 80, 109, 0.22));
 }
 
+.hero-illustration {
+  margin: 0;
+}
+
+.hero-illustration img {
+  width: min(100%, 430px);
+  display: block;
+  margin-inline: auto;
+  border-radius: 18px;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 28px rgba(47, 80, 109, 0.22);
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -201,6 +214,29 @@ h2 {
 
 .problems {
   background: #fff;
+}
+
+.problem-head {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  margin-bottom: 1.3rem;
+}
+
+.problem-head h2 {
+  margin-bottom: 0.35rem;
+}
+
+.problem-head .section-lead {
+  margin-bottom: 0;
+}
+
+.problem-image {
+  width: min(100%, 210px);
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 22px rgba(47, 80, 109, 0.12);
 }
 
 .problem-list {
@@ -468,6 +504,15 @@ h2 {
 
   .contact-illustration svg {
     margin-right: auto;
+  }
+
+  .problem-head {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .problem-image {
+    width: min(100%, 320px);
   }
 }
 
