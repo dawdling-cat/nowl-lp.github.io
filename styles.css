@@ -167,9 +167,12 @@ h1 span {
 }
 
 .hero-illustration img {
-  width: min(100%, 430px);
+  width: 100%;
+  max-width: 360px;
   display: block;
   margin-inline: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: 18px;
   border: 5px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 20px 28px rgba(47, 80, 109, 0.22);
@@ -233,7 +236,11 @@ h2 {
 }
 
 .problem-image {
-  width: min(100%, 210px);
+  width: 100%;
+  max-width: 170px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
   border-radius: 14px;
   border: 1px solid var(--line);
   box-shadow: 0 12px 22px rgba(47, 80, 109, 0.12);
@@ -512,7 +519,7 @@ h2 {
   }
 
   .problem-image {
-    width: min(100%, 320px);
+    max-width: 240px;
   }
 }
 
