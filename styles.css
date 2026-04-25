@@ -145,11 +145,10 @@ h1 span {
   box-shadow: var(--shadow);
 }
 
-.hero-visual img {
+.hero-visual svg {
   width: 100%;
   display: block;
   height: 340px;
-  object-fit: cover;
 }
 
 .hero-visual figcaption {
@@ -389,7 +388,7 @@ h3 {
   cursor: pointer;
 }
 
-.contact-illustration img {
+.contact-illustration svg {
   width: min(100%, 420px);
   display: block;
   margin-left: auto;
@@ -423,11 +422,11 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .hero-visual img {
+  .hero-visual svg {
     height: 260px;
   }
 
-  .contact-illustration img {
+  .contact-illustration svg {
     margin-inline: auto;
   }
 }
