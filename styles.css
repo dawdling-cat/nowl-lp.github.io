@@ -523,32 +523,6 @@ h2 {
   background: #fbfdff;
 }
 
-.merits {
-  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
-}
-
-.merit-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1rem;
-}
-
-.merit-list article {
-  border: 1px dashed #9db6da;
-  border-radius: 14px;
-  background: #fff;
-  padding: 1rem;
-}
-
-.merit-list h3 {
-  margin: 0 0 0.4rem;
-  color: #2f5f99;
-}
-
-.merit-list p {
-  margin: 0;
-}
-
 .section-note {
   margin-top: 1.2rem;
   color: #3f5f90;
