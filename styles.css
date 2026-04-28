@@ -322,11 +322,6 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.card.featured {
-  border-color: #d8cb70;
-  background: linear-gradient(170deg, #fffcf0 0%, #ffffff 80%);
-}
-
 .card h3 {
   margin-top: 0;
   font-size: 1.1rem;
