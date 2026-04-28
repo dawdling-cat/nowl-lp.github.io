@@ -300,6 +300,115 @@ h2 {
   position: relative;
 }
 
+.automation-menu {
+  background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+}
+
+.automation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 0.9rem;
+}
+
+.automation-item {
+  margin: 0;
+  padding: 0.95rem 1rem;
+  border: 1px solid #cfe0f5;
+  border-radius: 14px;
+  background: #fff;
+  font-weight: 700;
+  color: #2a4f7c;
+}
+
+.automation-note {
+  margin: 1rem 0 0;
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid #d6e2f4;
+  background: #eff6ff;
+}
+
+.compare {
+  background: #fff;
+}
+
+.compare-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.compare-card {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.1rem;
+}
+
+.compare-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.compare-before {
+  background: #f6f9fc;
+}
+
+.compare-after {
+  background: #eef7ff;
+}
+
+.compare-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.compare-card li + li {
+  margin-top: 0.45rem;
+}
+
+.process {
+  background: linear-gradient(180deg, #edf4ff 0%, #f8fcff 100%);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.process-grid li {
+  background: #fff;
+  border: 1px solid #cfe0f3;
+  border-radius: 14px;
+  padding: 0.95rem;
+}
+
+.process-grid span {
+  display: inline-block;
+  color: #ffffff;
+  background: #2f5f99;
+  border-radius: 999px;
+  padding: 0.08rem 0.55rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.process-grid h3 {
+  margin: 0.5rem 0 0.35rem;
+  color: #2f5f99;
+}
+
+.process-grid p {
+  margin: 0;
+}
+
+.process-note {
+  margin-top: 1rem;
+}
+
 .service-section::before {
   content: "";
   position: absolute;
