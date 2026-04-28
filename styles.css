@@ -153,9 +153,17 @@ h1 span {
   margin-top: 1.5rem;
 }
 
+.hero-illustration svg {
+  width: min(100%, 430px);
+  display: block;
+  margin-inline: auto;
+  border-radius: 18px;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 20px 28px rgba(47, 80, 109, 0.22));
+}
+
 .hero-illustration {
   margin: 0;
-  position: relative;
 }
 
 .hero-illustration img {
@@ -168,23 +176,6 @@ h1 span {
   border-radius: 18px;
   border: 5px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 20px 28px rgba(47, 80, 109, 0.22);
-}
-
-.hero-mini-gallery {
-  position: absolute;
-  right: 0;
-  bottom: -1.2rem;
-  display: flex;
-  gap: 0.6rem;
-}
-
-.hero-mini-gallery img {
-  width: 92px;
-  height: 92px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 3px solid rgba(255, 255, 255, 0.92);
-  box-shadow: 0 8px 18px rgba(47, 80, 109, 0.16);
 }
 
 .btn {
@@ -334,21 +325,6 @@ h2 {
 
 .solution {
   background: #f9fbff;
-}
-
-.section-visual-pair {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.8rem;
-  margin-bottom: 1.1rem;
-}
-
-.section-visual-pair img {
-  width: 100%;
-  height: 130px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 1px solid #d7e4f4;
 }
 
 .feature-grid {
@@ -527,21 +503,6 @@ h2 {
   color: var(--primary);
 }
 
-.flow-visual {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.85rem;
-}
-
-.flow-visual img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 14px;
-  border: 1px solid #d3def0;
-}
-
 .cases {
   background: #fff;
 }
@@ -606,29 +567,10 @@ h2 {
   color: var(--white);
 }
 
-.contact-illustration {
-  display: grid;
-  gap: 0.75rem;
-  justify-items: end;
-}
-
-.contact-main-image,
-.contact-sub-image {
+.contact-illustration svg {
   width: min(100%, 320px);
   display: block;
-  border-radius: 16px;
-  object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.86);
-  box-shadow: 0 12px 22px rgba(27, 44, 76, 0.2);
-}
-
-.contact-main-image {
-  aspect-ratio: 4 / 3;
-}
-
-.contact-sub-image {
-  width: min(72%, 230px);
-  aspect-ratio: 1 / 1;
+  margin-left: auto;
 }
 
 .site-footer {
@@ -660,18 +602,8 @@ h2 {
     order: -1;
   }
 
-  .hero-mini-gallery {
-    position: static;
-    margin-top: 0.8rem;
-    justify-content: center;
-  }
-
-  .section-visual-pair img {
-    height: 120px;
-  }
-
-  .contact-illustration {
-    justify-items: start;
+  .contact-illustration svg {
+    margin-right: auto;
   }
 
   .problem-head {
@@ -717,14 +649,6 @@ h2 {
 
   .hero {
     padding-top: 4.5rem;
-  }
-
-  .section-visual-pair {
-    grid-template-columns: 1fr;
-  }
-
-  .flow-visual {
-    grid-template-columns: 1fr;
   }
 
   .hero-actions .btn {
